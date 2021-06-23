@@ -1,1 +1,40 @@
-<p>login works!</p>
+<mat-card class="center cybercard typewriter" style="border-radius: 0px; box-shadow: 0px 0px 10px rgb(189, 1, 1);">
+    <mat-card-content>
+            <img src="https://i.pinimg.com/736x/1f/4a/3f/1f4a3fe1bab90d8526d8e62f575ea330.jpg" width="100px">
+
+        <h3 style="text-align: left; margin-left: 3vw;">
+        <br>
+        <mark>blackmarket@darknet</mark><br>
+        </h3>
+
+        <h5 style="text-align: left; margin-left: 3vw;">
+            <mark>connection:established ▷</mark>
+        </h5>
+        <br>
+        <h4 style="text-align: left; margin-left: 3vw;">
+            <span><mark>authentication_required █</mark></span>
+        </h4>        
+
+    <form [formGroup]="myForm">
+        <br>
+        <mat-form-field>
+            <label>@user</label>
+            <input matInput type="text" formControlName="user">
+            
+        </mat-form-field>
+
+        <mat-form-field>
+            <label>password</label>
+            <input matInput type="text" formControlName="password">
+            
+        </mat-form-field>
+        
+    </form>
+
+      </mat-card-content>
+      <!-- <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions> -->
+      <br>
+</mat-card>

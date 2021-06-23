@@ -1,4 +1,142 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+* {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+@font-face {
+    font-family: 'Share Tech Mono', monospace;
+    src: url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+}
+
+html, body {
+    height: 100%;
+    background: #010b0f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,#4b0000, #630101, #250505, #0b1b20, #010b0f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,#4b0000, #630101, #250505, #0b1b20, #010b0f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:aqua;
+}
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.center {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+  }
+
+.cybercard {
+    width: 20rem;
+    margin-top: 10vh;
+    background: transparent;
+    /* background-image: url("https://i.imgur.com/Hhw3Byo.gif"); */
+    border: 1px solid rgb(252, 14, 14);
+    border-right: 20px solid rgb(252, 14, 14);
+    border-left: 3px solid rgb(252, 14, 14);
+    border-top: 0px solid rgb(133, 0, 0);
+    border-bottom: 0px solid;
+    color:rgb(110, 247, 247);
+    text-shadow: 0px 0px 10px rgb(1, 189, 189);
+    animation: 
+      card-open 0.5s steps(40, end);
+}
+
+input {
+    margin-top: 2vh;
+    background: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid red;
+    color: red;
+    text-shadow: 0px 0px 10px red;
+    animation: 
+      reveal 1.5s steps(40, end);
+}
+
+label {
+    animation: 
+      reveal 1.5s steps(40, end);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+mark {
+    color: red;
+    text-shadow: 0px 0px 10px red;
+    background-color: rgba(32, 1, 1, 50);
+}
+
+.typewriter h3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(40, end);
+  }
+
+.typewriter h5 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2.5s steps(40, end);
+  }
+
+.typewriter h4 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(40, end);
+  }
+
+  span {
+    animation: blink 2s linear infinite;
+  }
+
+
+  
+  /* Animations */
+
+  @keyframes typing {
+    from {  width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes card-open {
+    from { width: 0 }
+    to { width: 20rem }
+  }
+
+  @keyframes reveal {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+
+  @keyframes blink{
+    0%{opacity: .8;}
+    20%{opacity: 1;}
+    40%{opacity: 1;}
+    60%{opacity: .2;}
+    80%{opacity: .4;}
+    100%{opacity: .6;}
+
+    }
+
+    @keyframes blink-fast{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    
+        }
+  
