@@ -7,7 +7,8 @@ import { DetalleComponent } from './modules/detalle/detalle.component';
 import { DetalleModule } from './modules/detalle/detalle.module';       // Autoimport - Línea 18
 import { HomeModule } from './modules/home/home.module';                // Autoimport - Línea 19
 import { LoginModule } from './modules/login/login.module';             // Autoimport - Línea 20
-import { RegistroModule } from './modules/registro/registro.module';    // Autoimport - Línea 21
+import { RegistroModule } from './modules/registro/registro.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';    // Autoimport - Línea 21
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { RegistroModule } from './modules/registro/registro.module';    // Autoi
     DetalleModule,    // Modulo custom importado
     HomeModule,       // Modulo custom importado
     LoginModule,      // Modulo custom importado
-    RegistroModule    // Modulo custom importado
+    RegistroModule, BrowserAnimationsModule    // Modulo custom importado
   ],
   providers: [],
   bootstrap: [AppComponent],
