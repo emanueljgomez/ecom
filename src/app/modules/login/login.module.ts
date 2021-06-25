@@ -20,4 +20,4 @@ import { MatFormFieldModule } from '@angular/material/form-field'; // Importar C
   ],
   exports:[LoginComponent]   // Línea creada manualmente - Permite que cualquier módulo consuma los componentes de este módulo
 })
-export class LoginModule { }
+export class LoginModule { } 

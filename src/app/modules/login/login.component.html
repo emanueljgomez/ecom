@@ -18,14 +18,19 @@
     <form [formGroup]="myForm">
         <br>
         <mat-form-field>
-            <label>@user</label>
+            <label>[ @user ]</label>
             <input matInput type="text" formControlName="user">
-            
+            <div *ngIf="myForm.get('user').hasError('required') && myForm.get('user').dirty" style="color:white; font-size:11px; background-color: red; margin-top: 1vh; margin-bottom: -3vh;">
+                ERR:user_required
+            </div>
         </mat-form-field>
 
         <mat-form-field>
-            <label>password</label>
-            <input matInput type="text" formControlName="password">
+            <label>[ password ]</label>
+            <input matInput type="password" formControlName="password">
+            <div *ngIf="myForm.get('password').hasError('required') && myForm.get('password').dirty" style="color:white; font-size:11px; background-color: red; margin-top: 1vh; margin-bottom: -3vh;">
+                ERR:password_required
+            </div>
             
         </mat-form-field>
         
