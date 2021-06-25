@@ -9,7 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field'; // Importar C
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     CommonModule,

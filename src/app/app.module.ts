@@ -10,6 +10,7 @@ import { DetalleModule } from './modules/detalle/detalle.module';       // Autoi
 import { HomeModule } from './modules/home/home.module';                // Autoimport - Línea 27
 import { LoginModule } from './modules/login/login.module';             // Autoimport - Línea 28
 import { RegistroModule } from './modules/registro/registro.module';    // Autoimport - Línea 29
+import { HttpClientModule } from '@angular/common/http';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 
@@ -27,6 +28,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HomeModule,       // Modulo custom importado
     LoginModule,      // Modulo custom importado
     RegistroModule,   // Modulo custom importado
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

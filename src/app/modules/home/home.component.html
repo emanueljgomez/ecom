@@ -1,1 +1,11 @@
-<p>home works!</p>
+<div style="width: 20rem; height: 24rem; margin: 10px;" *ngFor="let producto of productos">
+    <div>
+
+    <p><b>Post ID: </b>{{producto.postId}}</p>
+    <p><b>Message ID: </b>{{producto.id}}</p>
+    <p><b>Name: </b>{{producto.name}}</p>
+    <p><b>E-mail: </b> {{producto.email}}</p>
+    <p><b>Message Body:</b><br>{{producto.body}}</p>
+    
+    </div>
+</div>

@@ -3,10 +3,14 @@ import { FormBuilder,FormGroup,Validators } from '@angular/forms';  // Importar 
 
 @Component({
   selector: 'app-registro',
+  template: `
+  <app-login [message]="message"></app-login>
+  `,
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent implements OnInit {
+  
 
   myForm:FormGroup  // Declarar variable para el formulario con tipo FormGroup
 
@@ -23,11 +27,17 @@ export class RegistroComponent implements OnInit {
       })
   }
 
+  message = "Nombre"
+
   registro(){
-    console.log(this.myForm.value)
+    // console.log(this.myForm.value);
+    let user = this.myForm.value.user;
+    let password = this.myForm.value.password;
+    console.log("Usuario: "+user+" -- Contraseña: "+password)
   }
 
   ngOnInit(): void {
+    
   }
 
 }
