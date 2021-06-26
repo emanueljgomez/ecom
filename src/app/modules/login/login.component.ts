@@ -1,18 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,Validators } from '@angular/forms';  // Importar herramientos de ReactiveFormsModule
 
 @Component({
   selector: 'app-login',
-  template: `
-  <div>
-  {{message}}
-  </div>
-  `,
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  @Input() message:any;
 
   myForm:FormGroup  // Declarar variable para el formulario con tipo FormGroup
 

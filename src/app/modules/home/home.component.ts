@@ -10,6 +10,8 @@ import { ProductosService } from './productos.service';
 export class HomeComponent implements OnInit {
 
   productos:any=[]
+  productDetail:any
+  id:any
 
   constructor(
     private ProductosService:ProductosService
@@ -20,6 +22,7 @@ export class HomeComponent implements OnInit {
   async getProductos(){
     this.productos = await this.ProductosService.getAll()
   }
+
 
   ngOnInit(): void {
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProductosService } from '../home/productos.service';
 
 @Component({
   selector: 'app-detalle',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleComponent implements OnInit {
 
-  constructor() { }
+  loading=true;
+  producto;
 
-  ngOnInit(): void {
+  constructor(
+    private activatedRoute:ActivatedRoute,
+    private productosService:ProductosService
+  ) { 
+
+  }
+
+  async ngOnInit() {
+    const id = this.activatedRoute.snapshot.paramMap.get("id")
+    this.producto = await this.productosService.getProduct(id)
+    this.loading = false;
   }
 
 }

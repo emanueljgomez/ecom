@@ -11,7 +11,11 @@ export class ProductosService {
   ) { }
 
   getAll(){
-    return this.http.get("https://jsonplaceholder.typicode.com/comments?postId=1").toPromise();
+    return this.http.get("https://my-json-server.typicode.com/emanueljgomez/mockjson/items").toPromise();
+  }
+
+  getProduct(id){
+    return this.http.get("https://my-json-server.typicode.com/emanueljgomez/mockjson/items/"+id).toPromise();
   }
 
 }

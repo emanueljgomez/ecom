@@ -1,11 +1,17 @@
-<div style="width: 20rem; height: 24rem; margin: 10px;" *ngFor="let producto of productos">
-    <div>
-
-    <p><b>Post ID: </b>{{producto.postId}}</p>
-    <p><b>Message ID: </b>{{producto.id}}</p>
-    <p><b>Name: </b>{{producto.name}}</p>
-    <p><b>E-mail: </b> {{producto.email}}</p>
-    <p><b>Message Body:</b><br>{{producto.body}}</p>
+<div class="grid-container">
+    <div class="flex-container" *ngFor="let producto of productos">
     
+  
+        <mat-card class="productcard flex-item">
+
+            <img src={{producto.image}} width="90%">
+
+            <p>{{producto.name}}</p>
+            <br>
+            <button routerLink="/detalle/{{producto.id}}">[ VER DETALLE ]</button>
+
+        </mat-card>
+  
+
     </div>
 </div>

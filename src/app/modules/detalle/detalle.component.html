@@ -1,1 +1,19 @@
-<p>detalle works!</p>
+<div *ngIf="loading">LOADING...</div>
+<div *ngIf="!loading" class="grid-container">
+    <div class="flex-container">
+
+        <mat-card class="productcard flex-item">
+
+            <img src={{producto.image}} width="90%">
+
+            <p><b>Name: </b>{{producto.name}}</p>
+            <p><b>Type: </b> {{producto.type}}</p>
+            <p><b>Manufacturer:<br></b> {{producto.manufacturer}}</p>
+            <p><br>{{producto.description}}</p><br>
+            <p>€$ {{producto.price}}</p>
+
+        </mat-card>
+
+   
+    </div>
+</div>

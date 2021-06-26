@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 
+import { MatCardModule } from '@angular/material/card'; // Importar Componente de Angular Material
+import { MatButtonModule } from '@angular/material/button'; // Importar Componente de Angular Material
 
 
 @NgModule({
@@ -9,7 +11,10 @@ import { HomeComponent } from './home.component';
     HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatCardModule, // Declarar importación de Componente de Angular Material
+    MatButtonModule, // Declarar importación de Componente de Angular Material
+    
   ],
   exports:[HomeComponent]   // Línea creada manualmente - Permite que cualquier módulo consuma los componentes de este módulo
 })

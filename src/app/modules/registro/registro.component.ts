@@ -3,9 +3,6 @@ import { FormBuilder,FormGroup,Validators } from '@angular/forms';  // Importar 
 
 @Component({
   selector: 'app-registro',
-  template: `
-  <app-login [message]="message"></app-login>
-  `,
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']
 })
@@ -27,7 +24,6 @@ export class RegistroComponent implements OnInit {
       })
   }
 
-  message = "Nombre"
 
   registro(){
     // console.log(this.myForm.value);
