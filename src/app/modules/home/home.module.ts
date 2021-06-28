@@ -4,20 +4,16 @@ import { HomeComponent } from './home.component';
 
 import { MatCardModule } from '@angular/material/card'; // Importar Componente de Angular Material
 import { MatButtonModule } from '@angular/material/button'; // Importar Componente de Angular Material
-import { RouterModule } from '@angular/router';
-
+import { RouterModule } from '@angular/router'; // RouterModule es necesario para que funcione RouterLink
 
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
     MatCardModule, // Declarar importación de Componente de Angular Material
     MatButtonModule, // Declarar importación de Componente de Angular Material
-    RouterModule
-    
+    RouterModule,
   ],
-  exports:[HomeComponent]   // Línea creada manualmente - Permite que cualquier módulo consuma los componentes de este módulo
+  exports: [HomeComponent], // Línea creada manualmente - Permite que cualquier módulo consuma los componentes de este módulo
 })
-export class HomeModule { }
+export class HomeModule {}
