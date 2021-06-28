@@ -1,18 +1,18 @@
-<mat-card class="center cybercard typewriter" style="border-radius: 0px; box-shadow: 0px 0px 10px rgb(189, 1, 1);">
+<mat-card class="center cyber-card typewriter" style="border-radius: 0px; box-shadow: 0px 0px 10px rgb(189, 1, 1);">
     <mat-card-content>
             <img src="https://i.imgur.com/hBRFHeW.png" width="150px">
 
         <h3 style="text-align: left; margin-left: 3vw;">
         <mark>blackmarket@darknet</mark><br>
         </h3>
-        
+
         <h5 style="text-align: left; margin-left: 3vw;">
             <mark>connection:established ▷</mark>
         </h5>
         <br>
         <h4 style="text-align: left; margin-left: 3vw;">
             <span><mark>authentication_required █</mark></span>
-        </h4>        
+        </h4>
 
     <form [formGroup]="myForm" (ngSubmit)="login()">
         <br>
@@ -30,12 +30,12 @@
             <div *ngIf="myForm.get('password').hasError('required') && myForm.get('password').dirty" style="color:white; font-size:11px; background-color: red; margin-top: 1vh; margin-bottom: -3vh;">
                 ERR:password_required
             </div>
-            
+
         </mat-form-field>
         <br>
-        <button type="submit" [disabled]="myForm.invalid">[ CONFIRMAR ]</button>        
-    
+        <button type="submit" [disabled]="myForm.invalid">[ CONFIRMAR ]</button>
+
     </form>
-    
+
 </mat-card-content>
 </mat-card>

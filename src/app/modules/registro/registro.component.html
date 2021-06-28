@@ -1,4 +1,4 @@
-<mat-card class="center cybercard typewriter" style="border-radius: 0px; box-shadow: 0px 0px 10px rgb(189, 1, 1);">
+<mat-card class="center cyber-card typewriter" style="border-radius: 0px; box-shadow: 0px 0px 10px rgb(189, 1, 1);">
     <mat-card-content>
 
         <h3 style="text-align: left; margin-left: 3vw;">
@@ -13,11 +13,11 @@
         <br>
         <h4 style="text-align: left; margin-left: 3vw;">
             <mark>new_user</mark>
-        </h4>        
+        </h4>
 
     <form [formGroup]="myForm" (ngSubmit)="registro()">
         <br>
-        
+
         <mat-form-field>
             <label>[ name ]</label>
             <input matInput type="text" formControlName="name">
@@ -37,9 +37,9 @@
         <mat-form-field>
             <label>[ phone ]</label>
             <input matInput type="text" formControlName="phone">
-            
+
         </mat-form-field>
-        
+
         <mat-form-field>
             <label>[ e-mail ]</label>
             <input matInput type="text" formControlName="user">
@@ -60,7 +60,7 @@
             </div>
             <div *ngIf="myForm.get('password').hasError('maxlength') && myForm.get('password').dirty" style="color:white; font-size:11px; background-color: red; margin-top: 1vh; margin-bottom: -3vh;">
               ERR:password_maxlength=10
-            </div>           
+            </div>
 
         </mat-form-field>
         <br>

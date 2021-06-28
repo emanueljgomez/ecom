@@ -19,7 +19,7 @@ html, body {
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-/* Responsive Grid & Flex */ 
+/* Responsive Grid & Flex */
 
 .grid-container {
   display: grid;
@@ -52,7 +52,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 10px;
   }
 
-.cybercard {
+.cyber-card {
     width: 20rem;
     margin-top: 10vh;
     background: transparent;
@@ -64,11 +64,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     border-bottom: 0px solid;
     color:rgb(110, 247, 247);
     text-shadow: 0px 0px 10px rgb(1, 189, 189);
-    animation: 
+    animation:
       card-open 0.5s steps(40, end);
 }
 
-.productcard {
+.product-card {
   width: 12rem;
   margin-top: 5vh;
   background: transparent;
@@ -80,7 +80,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   border-bottom: 1px solid red;
   color:rgb(110, 247, 247);
   text-shadow: 0px 0px 10px rgb(1, 189, 189);
-  animation: 
+  animation:
     card-open 0.5s steps(40, end);
 }
 
@@ -96,12 +96,12 @@ input {
     border-bottom: 1px solid red;
     color: red;
     text-shadow: 0px 0px 10px red;
-    animation: 
+    animation:
       reveal 1.5s steps(40, end);
 }
 
 label {
-    animation: 
+    animation:
       reveal 1.5s steps(40, end);
 }
 
@@ -123,7 +123,7 @@ mark {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation: 
+    animation:
       typing 2s steps(40, end);
   }
 
@@ -132,7 +132,7 @@ mark {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation: 
+    animation:
       typing 2.5s steps(40, end);
   }
 
@@ -141,7 +141,7 @@ mark {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation: 
+    animation:
       typing 3s steps(40, end);
   }
 
@@ -150,7 +150,7 @@ mark {
   }
 
 
-  
+
   /* Animations */
 
   @keyframes typing {
@@ -181,6 +181,5 @@ mark {
     @keyframes blink-fast{
         0%{opacity: 0;}
         100%{opacity: 1;}
-    
+
         }
-  

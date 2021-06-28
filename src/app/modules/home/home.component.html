@@ -1,17 +1,11 @@
 <div class="grid-container">
-    <div class="flex-container" *ngFor="let producto of productos">
-    
-  
-        <mat-card class="productcard flex-item">
+  <div class="flex-container" *ngFor="let producto of productos">
+    <mat-card class="product-card flex-item">
+      <img [src]="producto.image" width="90%" />
 
-            <img src={{producto.image}} width="90%">
-
-            <p>{{producto.name}}</p>
-            <br>
-            <button routerLink="/detalle/{{producto.id}}">[ VER DETALLE ]</button>
-
-        </mat-card>
-  
-
-    </div>
+      <p>{{ producto.name }}</p>
+      <br />
+      <button [routerLink]="'/detalle/' + producto.id">[ VER DETALLE ]</button>
+    </mat-card>
+  </div>
 </div>
